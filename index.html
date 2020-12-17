@@ -2,12 +2,60 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>My first three.js app</title>
+    <title>PreventGame</title>
+    <link rel="stylesheet" href="css/devices.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>
         body { margin: 0; }
 		</style>
   </head>
   <body>
+    <div class="navbar">
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+              <img src="/images/pg-logo.png" width="30" height="30" class="d-inline-block align-top" alt="">PreventGame
+            </a>
+          </nav>
+    </div>
+
+    <div class="marvel-device note8">
+        <div class="inner"></div>
+        <div class="overflow">
+            <div class="shadow"></div>
+        </div>
+        <div class="speaker"></div>
+        <div class="sensors"></div>
+        <div class="more-sensors"></div>
+        <div class="sleep"></div>
+        <div class="volume"></div>
+        <div class="camera"></div>
+        <div class="screen">
+            <!-- Content goes here -->
+        </div>
+    </div>
+
+
+    <div class="music">
+    </div>
+    <div class="footer">
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script src="js/three.js"></script>
 		<script>
       const scene = new THREE.Scene();
@@ -35,6 +83,8 @@
 
 			animate();
 		</script>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>

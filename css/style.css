@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "FontFont_FF.Mark.Pro.Black";
+  src: url("/font/FontFont_FF.Mark.Pro.Black.otf") format("opentype");
+}
+
+body {
+  font-family: "FontFont_FF.Mark.Pro.Black";
+}
