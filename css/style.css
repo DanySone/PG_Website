@@ -1,8 +1,17 @@
 @font-face {
-  font-family: "FontFont_FF.Mark.Pro.Black";
-  src: url("/font/FontFont_FF.Mark.Pro.Black.otf") format("opentype");
+    font-family: 'League Spartan';
+    src:  url('font/LeagueSpartan-Bold.otf'),
+          url('font/leaguespartan-bold-webfont.woff2') format('woff2'),
+          url('font/leaguespartan-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
-body {
-  font-family: "FontFont_FF.Mark.Pro.Black";
+.d-flex,
+.navbar-brand,
+.nav a {
+  font-family: 'League Spartan', serif;
+  color: #13293D;
+  text-decoration:none;
 }

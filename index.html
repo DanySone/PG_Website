@@ -1,23 +1,43 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>PreventGame</title>
     <link rel="stylesheet" href="css/devices.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <style>
-        body { margin: 0; }
-		</style>
+    .navbar-inner {
+        background:transparent;
+    }
+
+    li.menu-item{
+       margin:0 0 10px 0;
+    }
+
+    </style>
   </head>
   <body>
-    <div class="navbar">
-        <nav class="navbar navbar-light bg-light">
+    <!-- Navbar -->
+    <div class="d-flex">
+      <nav class="navbar sticky-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
             <a class="navbar-brand" href="#">
-              <img src="/images/pg-logo.png" width="30" height="30" class="d-inline-block align-top" alt="">PreventGame
+              <img src="images/pg-logo.png" width="100px" alt="" loading="lazy">
             </a>
-          </nav>
+          </div>
+          <ul class="nav justify-content-center mx-2">
+            <li class="nav-item active mr-5"><a href="#">Home</a></li>
+            <li class="nav-item mr-5"><a href="#">Contact</a></li>
+            <li class="nav-item mr-5"><a href="#">Team</a></li>
+            <li class="nav-item"><a href="#">Donate</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
+    <!-- Background Image -->
+    <div class="view" style="background-image: url('images/pg-background.jpg'); background-repeat: no-repeat; background-size: cover;">
 
     <div class="marvel-device note8">
         <div class="inner"></div>
