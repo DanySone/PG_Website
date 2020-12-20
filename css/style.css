@@ -7,11 +7,17 @@
     font-style: normal;
 
 }
-
+video {
+  width: 100%;
+  height: auto;
+}
 .d-flex,
 .navbar-brand,
 .nav a {
   font-family: 'League Spartan', serif;
-  color: #13293D;
+  color: #F5F5F5;
   text-decoration:none;
+}
+.mob {
+  padding-top: 100px
 }

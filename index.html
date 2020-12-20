@@ -6,54 +6,80 @@
     <link rel="stylesheet" href="css/devices.min.css" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-    .navbar-inner {
-        background:transparent;
-    }
+    <link rel="icon" type="image/png" href="images/pg-logo.png" />
 
-    li.menu-item{
-       margin:0 0 10px 0;
-    }
 
-    </style>
   </head>
   <body>
     <!-- Navbar -->
     <div class="d-flex">
-      <nav class="navbar sticky-top">
+      <nav class="navbar navbar-expand fixed-top">
         <div class="container-fluid">
           <div class="navbar-header">
             <a class="navbar-brand" href="#">
-              <img src="images/pg-logo.png" width="100px" alt="" loading="lazy">
+              <img src="images/pg-logo.png" width="100px" alt="">
             </a>
           </div>
-          <ul class="nav justify-content-center mx-2">
-            <li class="nav-item active mr-5"><a href="#">Home</a></li>
-            <li class="nav-item mr-5"><a href="#">Contact</a></li>
-            <li class="nav-item mr-5"><a href="#">Team</a></li>
-            <li class="nav-item"><a href="#">Donate</a></li>
-          </ul>
+          <div class="collapse navbar-collapse">
+            <ul class="nav">
+              <li class="nav-item active mr-5"><a href="#">Home</a></li>
+              <li class="nav-item mr-5"><a href="#">Contact</a></li>
+              <li class="nav-item mr-5"><a href="#">Team</a></li>
+              <li class="nav-item"><a href="#">Donate</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
     </div>
     <!-- Background Image -->
-    <div class="view" style="background-image: url('images/pg-background.jpg'); background-repeat: no-repeat; background-size: cover;">
 
-    <div class="marvel-device note8">
-        <div class="inner"></div>
-        <div class="overflow">
-            <div class="shadow"></div>
+    <div class="view" style="  background-image: url('images/pg-background.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: auto">
+
+<div class="mob container-fluid">
+
+  <div class="row justify-content-center ">
+    <div class="col-sm align-self-center">
+      <div class="card text-white bg-transparent text-center mb-3 mx-auto " style="max-width: 200rem;font-size:25px;font-family: 'League Spartan', sans-serif;">
+        <div class="card-header">PreventGame</div>
+        <div class="card-body">
+          <h5 class="card-title">Social Media Prevention Game</h5>
+          <p class="card-text">Download the application for free in the Google Play Store!</p>
         </div>
-        <div class="speaker"></div>
-        <div class="sensors"></div>
-        <div class="more-sensors"></div>
-        <div class="sleep"></div>
-        <div class="volume"></div>
-        <div class="camera"></div>
-        <div class="screen">
-            <!-- Content goes here -->
-        </div>
+        <a class="app-store" href="#">
+          <img src="images/google-play-badge.png" width="200px" alt="">
+        </a>
+      </div>
+
+
     </div>
+
+    <div class="col-sm">
+      <div class="marvel-device note8">
+          <div class="inner"></div>
+          <div class="overflow">
+              <div class="shadow"></div>
+          </div>
+          <div class="speaker"></div>
+          <div class="sensors"></div>
+          <div class="more-sensors"></div>
+          <div class="sleep"></div>
+          <div class="volume"></div>
+          <div class="camera"></div>
+          <div class="screen">
+              <video autoplay loop muted playsinline>
+                <source src="videos/test.mp4" type="video/mp4">
+              </video>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+
+  </div>
+</div>
 
 
     <div class="music">
@@ -77,32 +103,6 @@
 
 
     <script src="js/three.js"></script>
-		<script>
-      const scene = new THREE.Scene();
-			const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
-
-			const renderer = new THREE.WebGLRenderer();
-			renderer.setSize( window.innerWidth, window.innerHeight );
-			document.body.appendChild( renderer.domElement );
-
-			const geometry = new THREE.BoxGeometry();
-			const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-			const cube = new THREE.Mesh( geometry, material );
-			scene.add( cube );
-
-			camera.position.z = 5;
-
-			const animate = function () {
-				requestAnimationFrame( animate );
-
-				cube.rotation.x += 0.01;
-				cube.rotation.y += 0.01;
-
-				renderer.render( scene, camera );
-			};
-
-			animate();
-		</script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
