@@ -9,9 +9,10 @@
     <link rel="icon" type="image/png" href="images/pg-logo.png" />
   </head>
   <body>
+
     <!-- Navbar -->
     <div class="d-flex">
-      <nav class="navbar navbar-expand fixed-top">
+      <nav id="main-navbar" class="navbar navbar-expand fixed-top">
         <div class="container-fluid">
           <div class="navbar-header">
             <a class="navbar-brand" href="#">
@@ -20,67 +21,88 @@
           </div>
           <div class="collapse navbar-collapse">
             <ul class="nav">
-              <li class="nav-item active mr-5"><a href="#">Home</a></li>
-              <li class="nav-item mr-5"><a href="#">Contact</a></li>
-              <li class="nav-item mr-5"><a href="#">Team</a></li>
-              <li class="nav-item"><a href="#">Donate</a></li>
+              <li class="nav-item active mr-5">
+                <a href="#home">Home</a>
+              </li>
+              <li class="nav-item mr-5">
+                <a href="#info">Information</a>
+              </li>
+              <li class="nav-item mr-5">
+                <a href="#parters">Partners</a>
+              </li>
+            </ul>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav ml-auto">
+              <li class="nav-item mr-5">
+                <a href="#contact">Contact</a>
+              </li>
+              <li class="nav-item mr-5">
+                <a href="#">Team</a>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
     </div>
     <!-- Background Image -->
-
-    <div class="view" style="  background-image: url('images/pg-background.jpg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: auto">
-
+    <div data-spy="scroll" data-target="#main-navbar" data-offset="0">
     <!-- Section 1 -->
-    <section id="section_1">
-      <div class="mob container-fluid">
-        <div class="row justify-content-center">
-          <div class="center">
-              <div class="marvel-device note8">
-                  <div class="inner"></div>
-                  <div class="overflow">
-                      <div class="shadow"></div>
+      <section id="section_1">
+        <div id="home" class="mob container-fluid" style="  background-color: #1a1a2e;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: auto">
+          <div class="row justify-content-center">
+            <div class="center">
+                <div class="marvel-device note8">
+                    <div class="inner"></div>
+                    <div class="overflow">
+                        <div class="shadow"></div>
+                    </div>
+                    <div class="speaker"></div>
+                    <div class="sensors"></div>
+                    <div class="more-sensors"></div>
+                    <div class="sleep"></div>
+                    <div class="volume"></div>
+                    <div class="camera"></div>
+                    <div class="screen">  a
+                        <video autoplay loop muted playsinline>
+                          <source src="videos/test.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+          </div>
+          <div class="row">
+              <div class="col-sm align-self-center">
+                <div class="card border-0 text-white bg-transparent text-center mb-3 mx-auto" style="max-width: 200rem;font-size:25px;font-family: 'League Spartan', sans-serif;">
+                  <div class="card-header border-0">PreventGame</div>
+                      <div class="card-body">
+                          <h5 class="card-title">Social Media Prevention Game</h5>
+                          <p class="card-text">Download the application for free in the Google Play Store!</p>
+                      </div>
+                      <a class="app-store" href="#">
+                          <img src="images/google-play-badge.png" width="200px" alt="">
+                      </a>
                   </div>
-                  <div class="speaker"></div>
-                  <div class="sensors"></div>
-                  <div class="more-sensors"></div>
-                  <div class="sleep"></div>
-                  <div class="volume"></div>
-                  <div class="camera"></div>
-                  <div class="screen">
-                      <video autoplay loop muted playsinline>
-                        <source src="videos/test.mp4" type="video/mp4">
-                      </video>
-                  </div>
+
+
               </div>
           </div>
-
         </div>
-        <div class="row">
-            <div class="col-sm align-self-center">
-              <div class="card border-0 text-white bg-transparent text-center mb-3 mx-auto" style="max-width: 200rem;font-size:25px;font-family: 'League Spartan', sans-serif;">
-                <div class="card-header border-0">PreventGame</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Social Media Prevention Game</h5>
-                        <p class="card-text">Download the application for free in the Google Play Store!</p>
-                    </div>
-                    <a class="app-store" href="#">
-                        <img src="images/google-play-badge.png" width="200px" alt="">
-                    </a>
-                </div>
+      </section>
 
-
-            </div>
+    <!-- Section 2 -->
+    <section id="section_2">
+        <div id="info" class="mob container-fluid" style="background-color: #16213e;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: auto">
         </div>
-      </div>
     </section>
-
-
+  </div>
     <div class="music">
     </div>
     <div class="footer">
