@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PreventGame</title>
   <link rel="stylesheet" href="css/devices.min.css" type="text/css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -27,13 +28,13 @@
         <div class="collapse navbar-collapse">
           <ul class="nav">
             <li class="nav-item active mr-5">
-              <a href="#home">Home</a>
+              <a href="#home">Accueil</a>
             </li>
             <li class="nav-item mr-5">
               <a href="#info">Information</a>
             </li>
             <li class="nav-item mr-5">
-              <a href="#parters">Partners</a>
+              <a href="#partners">Partenaires</a>
             </li>
           </ul>
         </div>
@@ -43,7 +44,7 @@
               <a href="#contact">Contact</a>
             </li>
             <li class="nav-item mr-5">
-              <a href="#">Team</a>
+              <a href="#team">Equipe</a>
             </li>
           </ul>
         </div>
@@ -57,7 +58,10 @@
       <div id="home" class="mob container-fluid" style="  background-color: #1a1a2e;
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: auto">
+      background-position: auto
+      max-width:100%;
+      height:auto;
+      overflow: auto;">
       <div class="row justify-content-center">
         <div class="center">
           <div class="marvel-device note8">
@@ -73,7 +77,7 @@
             <div class="camera"></div>
             <div class="screen">
               <video autoplay loop muted playsinline>
-                <source src="videos/Demo_v1.mp4" type="video/mp4">
+                <source src="videos/Demo_v1.mp4" type="video/mp4" style="max-width:100%;height:auto;">
                 </video>
               </div>
             </div>
@@ -104,16 +108,24 @@
       <div id="info" class="mob container-fluid" style="background-color: #16213e;
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: auto">
+      background-position: auto;
+      margin-bottom: 1">
       <div class="row">
         <div class="col-6">
           <div class="container-fluid">
-            <div class="card">
+            <div class="card mb-5 ">
               <div class="card-body">
                 <h5 class="card-title">Quelques chiffres clés</h5>
-                <p class="card-text">• Cyberharcèlement : 76% des personnes interrogées pensent que le cyberharcèlement nécessite une attention particulière.*</p>
-                <p class="card-text">• Phishing : 123.9 millions d'attaques en 2019.</p>
-                <p class="card-text">• Dropshipping : 23% des ventes sont issues du drop shipping.</p>
+                <p class="card-text">• <strong>Cyberharcèlement</strong> : <strong>76%</strong> des personnes interrogées pensent que le cyberharcèlement nécessite une attention particulière.*</p>
+                <div id="piechart" style="
+                  text-align: right;
+                  width: 600px;
+                  max-width: 100%;
+                  height: 300px;
+                  max-height: 100%;
+                  overflow:hidden"></div>
+                <p class="card-text">• <strong>Phishing</strong> : <strong>123.9 millions</strong> d'attaques en 2019.</p>
+                <p class="card-text">• <strong>Dropshipping</strong> : <strong>23%</strong> des ventes sont issues du drop shipping.</p>
                 <span id="more">Cette statistique présente la part des internautes qui pensaient que le cyber-harcèlement nécessitait une attention particulière au niveau mondial en avril 2018. Selon l'enquête Ipsos, 76 % des personnes interrogées estimaient que les mesures de cyber-harcèlement étaient insuffisantes et que le problème nécessitait une attention particulière.
                 </span>
               </div>
@@ -122,43 +134,191 @@
         </div>
 
         <div class="col-6">
-          <iframe width="500" height="400"
-          src="https://www.youtube.com/embed/pFYfaKLspyI">
+          <iframe width="100%" height="400"
+          src="https://www.youtube.com/embed/FAuBuZTwT1A">
         </iframe>
+        <p style="color: white;
+        text-align:center;"><i>Vidéo de l'association e-enfance montrant comment se sortir du cyberharcèlement dans les réseaux sociaux</i></p>
       </div>
 
         </div>
       </div>
     </section>
+
     <!-- Section 3 -->
     <section id="section_3">
-      <div id="teasing" class="mob container-fluid" style="background-color: #FB0620;
+      <div id="teasing" class="mob container-fluid" style="background-color: #415A77;
       background-repeat: no-repeat;
       background-size: cover;
       background-position: auto">
       <div class="container">
         <div class="row">
-          <div class="col-6"style="width: 300px;border: 1px solid #A0A0A0;text-align: center; background: #C0C0C0;line-height:300px;">Texte vidéo n°2</div>
           <div class="col-6">
-            <iframe id="video2" title="Genshin" width="500" height="400" src="https://www.youtube.com/embed/jEp9yyhwZFE" style="margin-top:30px"></iframe>
+            <div class="card text-center mx-auto">
+              <div class="card-body">
+                <h5 class="card-title">Histoires interactives</h5>
+                <p class="card-text">• Plusieurs choix influençant l'entièreté du jeu!
+                </p>
+                <p class="card-text">• Un gameplay légendaire !
+                </p>
+                <p class="card-text">• Des histoires dignes des plus grands écrivains
+                </p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <video width="320" height="240" controls autoplay>
+              <source src="videos/Demo1.mp4" type=video/mp4>
+            <video>
           </div>
         </div>
       </div>
       <div class="container" style="margin-top:75px">
         <div class="row">
-          <div class="col-6">
-            <iframe id="video2" title="Genshin" width="500"height="400" src="https://www.youtube.com/embed/jEp9yyhwZFE" style="margin-top:30px"></iframe>
+        <div class="col-6">
+          <video width="320" height="240" controls autoplay>
+            <source src="videos/Demo1.mp4" type=video/mp4>
+          <video>
+        </div>
+        <div class="col-6">
+          <div class="card text-center mx-auto">
+            <div class="card-body">
+              <h5 class="card-title">Apprends en t'amusant</h5>
+              <p class="card-text">• Ne tombe pas dans les pièges et sois incollable sur les dangers des réseaux sociaux!
+              </p>
+            </div>
           </div>
-          <div class="col-6"style="width: 300px;border: 1px solid #A0A0A0;text-align: center; background: #C0C0C0;line-height:300px;">Texte vidéo n°2</div>
+        </div>
+      </div>
+      </div>
+    </section
+
+    <!-- Section 4 -->
+    <section id="section_4">
+      <div id="partners" class="mob container-fluid" style="background-color: #16213e;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: auto">
+      <div class="row">
+        <div class="col-6">
+          <div class="container-fluid">
+            <div class="card mb-5">
+              <a href="https://www.e-enfance.org/" class="btn btn-primary btn-lg" role="button"><img class="card-img-top" src="images/eEnfance-logo.jpg" alt="Card image cap" style="max-width:400px;max-height:300px;"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="card text-center mx-auto">
+            <div class="card-body">
+              <h5 class="card-title">e-Enfance</h5>
+              <p class="card-text">• <strong>Association créée en 2005</strong> : visant à sensibiliser les jeunes aux bonnes pratiques d'Internet ainsi qu'à conseiller les parents et les acteurs de l'éducation.
+              </p>
+              <a class="btn btn-primary" href="https://www.e-enfance.org/" role="button">Lien vers le site</a>
+
+            </div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="container-fluid">
+            <div class="card mb-5">
+              <a href="https://asso-generationnumerique.fr/" class="btn btn-primary btn-lg" role="button"><img class="card-img-top" src="images/gen-num.png" alt="Card image cap" style="max-width:400px;max-height:250px;"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="card text-center mx-auto">
+            <div class="card-body">
+              <h5 class="card-title">Génération Numérique</h5>
+              <p class="card-text">• <strong>Association </strong> qui propose des interventions dans les établissements dans un but de prévention, d'information et de vulgarisation aux usages du numérique.
+              </p>
+              <a class="btn btn-primary" href="https://asso-generationnumerique.fr/" role="button">Lien vers le site</a>
+
+            </div>
+          </div>
+      </div>
 
         </div>
       </div>
     </section>
+
+    <!-- Section 5 -->
+    <section id="section_5">
+      <div id="team" class="mob container-fluid" style="background-color: #16213e;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: auto">
+      <div class="row">
+        <div class="col-6">
+          <div class="container-fluid">
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </section>
+
 </div>
 <div class="music">
 </div>
-<div class="footer">
-</div>
+<!-- Footer -->
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Twitter</h5>
+
+          <a class="btn btn-floating m-1" href="https://twitter.com/GamePrevent" role="button" style="background-size:cover;">
+            <img src="images/twitter.png" width="90" alt="" >
+          </a>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Facebook</h5>
+
+          <a class="btn btn-floating m-1" href="https://www.facebook.com/PreventGame-103221051752154" role="button" style="background-size:cover;">
+            <img src="images/facebook.png" width="90" alt="" >
+          </a>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0" style="background:transparent;">
+          <h5 class="text-uppercase">Youtube</h5>
+
+          <a class="btn btn-floating m-1" href="https://www.youtube.com/channel/UCw3r5uAKZ9jJnnRo7bQTsGQ" role="button" style="background-size:cover;">
+            <img src="images/youtube.png" width="90" alt="" >
+          </a>
+
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright:
+    <a class="text-white" href="#">Hétéromogène</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
 
 
 
@@ -168,8 +328,29 @@
 
 
 
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
 
+      function drawChart() {
 
+        var data = google.visualization.arrayToDataTable([
+          ['Opinion', 'Nombre de personnes'],
+          ['Le cyberharcèlement nécessite une attention particulière',     15805],
+          ['La cyberintimidation peut être gérée par le biais des mesures anti-harcèlement déjà existantes',      4988]
+        ]);
+
+        var options = {
+          legend: 'none',
+          title: '© Statista 2021'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
 <script src="js/three.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
